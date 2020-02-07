@@ -42,13 +42,13 @@ const template = [
         submenu: [
             {
                 label: 'Learn More',
-                click () { require('electron').shell.openExternal('https://electron.atom.io') }
+                click () { require('electron').shell.openExternal('https://github.com/arjenzhou/doubanfm') }
             }
         ]
     }
 ]
 
-if (process.platform === 'darwin') {
+if (process.platform === 'darwin' || process.platform == 'win32') {
     template.unshift({
         label: app.getName(),
         submenu: [

@@ -12,7 +12,7 @@ let willQuitApp = false;
 let mainWindow
 
 function createWindow () {
-  Menu.setApplicationMenu(appMenu);
+  Menu.setApplicationMenu(null);
   // Create the browser window.
   mainWindow = new BrowserWindow({
       width: 1080,
@@ -22,16 +22,17 @@ function createWindow () {
       webPreferences: {
           preload: path.join(__dirname, 'browser.js'),
           nodeIntegration: false,
-          plugins: true
+          plugins: true,
+          nodeIntegration: true // add this
       },
-      titleBarStyle: 'hidden',
-      // titleBarStyle: 'hiddenInset',
-      // titleBarStyle: 'customButtonsOnHover',
+    //   titleBarStyle: 'hidden',
+      titleBarStyle: 'hiddenInset',
+    //   titleBarStyle: 'customButtonsOnHover',
       // transparent: true,
-      frame: false,
+    //   frame: false,
       icon: path.join(__dirname, 'build/icon.icns')
   })
-
+//   mainWindow.webContents.openDevTools();
   mainWindow.loadURL('https://douban.fm');
 
     mainWindow.webContents.on('did-finish-load', ()=>{

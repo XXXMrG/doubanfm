@@ -1,30 +1,25 @@
 {
-  "name": "FM",
-  "productName": "FM",
+  "name": "Douban-FM",
+  "productName": "Douban-FM",
   "version": "1.0.1",
-  "description": "豆瓣FM",
+  "description": "Douban FM",
   "main": "main.js",
-  "scripts": {
-    "start": "./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron .",
-    "build": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=build/icon.icns --prune=true --out=release-builds",
-    "build:macos": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --platform=darwin --arch=x64 --icon=build/icon.icns --sign='Developer ID Application: Alex Liu' && cd dist/FM-darwin-x64 && zip -ryXq9 ../FM-osx-${npm_package_version}.zip FM.app",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
-  },
   "build": {
-    "appId": "com.example.app",
+    "appId": "fm.douban",
     "mac": {
-      "category": "Development"
+      "icon": "app/icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
     }
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "dependencies": {

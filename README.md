@@ -1,52 +1,12 @@
+> 此项目是我在 https://github.com/JJVvV/doubanfm 的基础上继续开发的。
 
-# FM 
+[下载链接](https://github.com/arjenzhou/doubanfm/releases) [问题反馈](https://github.com/arjenzhou/doubanfm/issues) [原说明文档](OLDREADME.md)
 
+由于豆瓣官方已经停止开发桌面端应用，所以我一直考虑开发一个跨平台的豆瓣 fm 应用。所幸的是发现了原作者已经完成了很大一部分功能，但是原作者已经很久没有更新了，所以我考虑继续维护这个项目。
 
+同原作者一样，我也是在 OSX 平台下开发，Windows 平台只能以虚拟机的方式来进行测试，同时作为后端工程师，我对 JS 以及 electron 的理解可能不够深入，如果发现问题欢迎反馈。
 
-这是一个基于 [electron](https://github.com/electron/electron) 开发的桌面端[豆瓣FM](https://douban.fm).
-
-## WHY
-
-豆瓣FM是个非常棒的应用，但是官方没有提供桌面端，虽然使用浏览器听歌也很好，但是在某些情况下胡很麻烦。比如要想切歌场景，就需要先切换到浏览器，再找到豆瓣FM来进行切歌，操作不够方便。桌面端很好的解决了这些问题。
-
-
-<br>
-<div align="center">
-	<a href="https://github.com/jjvvv/doubanfm/releases/latest" align="center">
-		<img src="media/doubanfm.png" width="617">
-	</a>
-</div>
+如果有什么对新功能或想法欢迎交流。
 
 
-## 功能
-
-### Keyboard shortcuts
-
-- 喜欢/不喜欢: <kbd>Command</kbd> <kbd>7</kbd>
-- 播放/暂停: <kbd>Command</kbd> <kbd>8</kbd>
-- 上一首: <kbd>Command</kbd> <kbd>9</kbd>
-- 下一首: <kbd>Command</kbd> <kbd>0</kbd>
-
-### 返回
-添加了返回按钮（模拟浏览器返回）
-
-
-
-## 下载
-
-[**Download**](https://github.com/jjvvv/doubanfm/releases/latest)
-
-
-## 感谢
-
-- [豆瓣FM](https://douban.fm)
-- [Electron quick start](https://github.com/electron/electron-quick-start)
-
-## TODO
-
-* 支持上一首按钮
-* 支持单曲循环
-
-## License
-
-MIT
+感谢 https://github.com/JJVvV 
